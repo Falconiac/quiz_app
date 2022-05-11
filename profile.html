@@ -11,17 +11,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="questcard.css" />
+    <link rel="stylesheet" href="btn_icon.css" />
+    <link rel="stylesheet" href="profile_css.css" />
     <title>Quiz Creator</title>
   </head>
   <body>
     <header>
       <h1>Profile</h1>
     </header>
-    <main>
-      <section class="picname">
-        <img class="profpic" src="res/profile.svg" alt="Your profile picture" />
-        <h2>Max Mustermann</h2>
-      </section>
+    <main class="yourprof">
+      <img class="profpic" src="res/avatar.svg" alt="Your profile picture" />
+      <h2 class="profname">Max Mustermann</h2>
 
       <section class="aboutyou">
         <p>
@@ -34,41 +35,34 @@
         </p>
       </section>
 
-      <section class="skills">
-        <h2>Your Skills:</h2>
-        <p class="tag">Skill 1</p>
-        <p class="tag">Skill 2</p>
-        <p class="tag">Skill 3</p>
-        <p class="tag">Skill 4</p>
-      </section>
+      <h2 class="skillhead">Your Skills:</h2>
+      <p class="tag1">Skill 1</p>
+      <p class="tag2">Skill 2</p>
+      <p class="tag3">Skill 3</p>
+      <p class="tag4">Skill 4</p>
 
-      <section class="logout">
+      <section class="logout bigansw">
         <a id="logoutbtn" href="#">LOGOUT</a>
       </section>
     </main>
-    <footer>
-      <ul>
-        <li>
-          <a href="index.html" aria-label="Link to Home"
-            ><img src="res/home.svg" alt="Home-Button"
-          /></a>
-        </li>
-        <li>
-          <a href="bookmarks.html" aria-label="Link to Bookmarks"
-            ><img src="res/bookmark.svg" alt="Bookmark-Button"
-          /></a>
-        </li>
-        <li>
-          <a href="create.html" aria-label="Link to Create a Page"
-            ><img src="res/create.svg" alt="Create Page-Button"
-          /></a>
-        </li>
-        <li>
-          <a href="profile.html" aria-label="Link to Profile"
-            ><img src="res/profile.svg" alt="Profile-Button"
-          /></a>
-        </li>
-      </ul>
+    <footer class="footer">
+      <nav class="nav">
+        <a class="--btn" href="index.html" aria-label="Link to Home"
+          ><img class="--icon" src="res/home.svg" alt="Home-Button"
+        /></a>
+
+        <a class="--btn" href="bookmarks.html" aria-label="Link to Bookmarks"
+          ><img class="--icon" src="res/bookmark.svg" alt="Bookmark-Button"
+        /></a>
+
+        <a class="--btn" href="create.html" aria-label="Link to Create a Page"
+          ><img class="--icon" src="res/create.svg" alt="Create Page-Button"
+        /></a>
+
+        <a class="--btn" href="profile.html" aria-label="Link to profile">
+          <img class="--icon" src="res/profile.svg" alt="Profile Home-Button" />
+        </a>
+      </nav>
     </footer>
   </body>
 </html>

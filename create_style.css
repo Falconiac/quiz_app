@@ -1,0 +1,17 @@
+.mainsec {
+  height: 80vh;
+  margin-top: 13vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.call2act {
+  margin: 2em 0 1em 0;
+}
+
+input {
+  min-height: 6em;
+  width: 35em;
+  box-shadow: 0.2em 0.2em 0.2em 0em #000000;
+}

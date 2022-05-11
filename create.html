@@ -11,17 +11,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="questcard.css" />
+    <link rel="stylesheet" href="btn_icon.css" />
+    <link rel="stylesheet" href="create_style.css" />
     <title>Quiz Creator</title>
   </head>
   <body>
     <header>
       <h1>Create</h1>
     </header>
-    <main>
+    <main class="mainsec">
       <section class="addquestion">
-        <label for="newquest" aria-label="Enter your new Question"
-          >Enter your question:</label
-        >
+        <p class="call2act">Enter your question:</p>
         <input
           type="text"
           name="newQuestion"
@@ -31,46 +32,42 @@
       </section>
 
       <section class="addanswer">
-        <label for="newansw" aria-label="Enter the correct answer"
-          >Enter the correct answer:</label
-        >
+        <p class="call2act">Enter your answer:</p>
         <input type="text" name="newAnswer" id="addans" placeholder="red" />
       </section>
 
-      <section class="fakeanswer">
-        <ul>
-          <li>Fake 1</li>
-          <li>Fake 2</li>
-          <li>Fake 3</li>
-        </ul>
+      <section class="addtag">
+        <p class="call2act">Enter your tags:</p>
+          <input
+            type="text"
+            name="anewtag"
+            id="entertag"
+            placeholder="#-tag1 , #-tag2 , #-tag3 , #-tag4"
+          />
+        </section>
       </section>
       <section class="subm">
-        <input type="submit" value="Submit" />
+        <input class="bigansw" type="submit" value="Submit" />
       </section>
     </main>
-    <footer>
-      <ul>
-        <li>
-          <a href="index.html" aria-label="Link to Home"
-            ><img src="res/home.svg" alt="Home-Button"
-          /></a>
-        </li>
-        <li>
-          <a href="bookmarks.html" aria-label="Link to Bookmarks"
-            ><img src="res/bookmark.svg" alt="Bookmark-Button"
-          /></a>
-        </li>
-        <li>
-          <a href="create.html" aria-label="Link to Create a Page"
-            ><img src="res/create.svg" alt="Create Page-Button"
-          /></a>
-        </li>
-        <li>
-          <a href="profile.html" aria-label="Link to Profile"
-            ><img src="res/profile.svg" alt="Profile-Button"
-          /></a>
-        </li>
-      </ul>
+    <footer class="footer">
+      <nav class="nav">
+        <a class="--btn" href="index.html" aria-label="Link to Home"
+          ><img class="--icon" src="res/home.svg" alt="Home-Button"
+        /></a>
+
+        <a class="--btn" href="bookmarks.html" aria-label="Link to Bookmarks"
+          ><img class="--icon" src="res/bookmark.svg" alt="Bookmark-Button"
+        /></a>
+
+        <a class="--btn" href="create.html" aria-label="Link to Create a Page"
+          ><img class="--icon" src="res/create.svg" alt="Create Page-Button"
+        /></a>
+
+        <a class="--btn" href="profile.html" aria-label="Link to profile">
+          <img class="--icon" src="res/profile.svg" alt="Profile Home-Button" />
+        </a>
+      </nav>
     </footer>
   </body>
 </html>
