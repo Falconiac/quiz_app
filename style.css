@@ -49,3 +49,7 @@ header h1 {
   bottom: 0;
   width: 100%;
 }
+
+.footer nav {
+  background-color: aqua;
+}
