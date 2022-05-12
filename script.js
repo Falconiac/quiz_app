@@ -1,10 +1,3 @@
-function booking() {
-  alert("ICH HABE DIE SCHNAUZE VOLL !!!!!!!!!");
-}
-// function answerbutton() {
-//   alert("und hiervon auch !!!!!!!!!!");
-// }
-
 let showHide = document.querySelector(".bigansw");
 showHide.addEventListener("click", () => {
   alert("Auch das funktionert nicht,wetten ?");
