@@ -3,7 +3,7 @@
   box-shadow: 0em 0em 0.4em 0em #000000;
   border-radius: 2em;
   margin: 1em auto;
-  padding: 2em;
+  padding: 1em;
   position: relative;
   max-width: 40em;
 
@@ -13,6 +13,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
   align-items: center;
+  justify-content: center;
 
   gap: 2em;
   height: 100%;
@@ -37,7 +38,7 @@
 .bookpos {
   position: absolute;
   right: 2em;
-  top: -2.5em;
+  top: -1.8em;
 }
 .question {
   grid-row-start: 2;
@@ -52,6 +53,7 @@
 
   grid-row-end: 4;
   grid-column-end: 4;
+  margin-top: 1em;
 }
 .tag1 {
   grid-row-start: 4;
@@ -81,6 +83,22 @@
   grid-row-end: 5;
   grid-column-end: 5;
 }
+
+/* alles eingefügt für javascript */
+
 .--bookmarked {
   background-color: orange;
+}
+
+.unvisible {
+  width: 20em;
+  border: 1px solid black;
+  padding: 0.5em;
+  position: absolute;
+  right: 30%;
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
 }
