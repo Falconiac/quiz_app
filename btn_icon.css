@@ -22,3 +22,11 @@
   position: absolute;
   bottom: 20%;
 }
+
+.background_green {
+  background-color: rgba(0, 200, 0, 0.4);
+}
+
+.background_red {
+  background-color: rgba(200, 0, 0, 0.4);
+}
