@@ -11,19 +11,23 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./profile_css.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="questcard.css" />
     <link rel="stylesheet" href="btn_icon.css" />
+    <link rel="stylesheet" href="./create_style.css" />
     <script type="module" src="./script.js" defer></script>
 
     <title>Quiz App</title>
   </head>
   <body>
     <header>
-      <h1>Quiz-App</h1>
+      <h2 id="headline">Quiz-App</h2>
     </header>
     <main class="main">
-      <div class="roller">
+
+      <!-- -------------------------HomeScreen------------------------- -->
+      <section class="view" id="home" class="roller">
         <article class="questcard">
           <h2 class="__h2">Question:</h2>
           <div>
@@ -263,23 +267,234 @@
           <a class="tag3" href="#"> #Tag </a>
           <a class="tag4" href="#"> #Tag </a>
         </section> -->
-      </div>
+      </section>
+      <!-- -------------------------BookmarkScreen------------------------- -->
+      <section class="view displayOff" id="bookmark_collection" class="roller">
+
+        <article class="questcard">
+          <h2 class="__h2">Question:</h2>
+          <div>
+            <img
+              class="--icon bookpos"
+              src="res/bookmark.svg"
+              alt="Drop to Bookmark"
+              data-js="trybackground"
+            />
+          </div>
+          <p class="question">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            odit cumque impedit laudantium explicabo perspiciatis fugiat quaerat
+            animi voluptatum laborum!
+          </p>
+
+          <div class="unvisible" data-js="answerfield">
+            <p>This is the Answer for the question nobody understood !!!</p>
+          </div>
+
+          <button class="bigansw background_green" data-js="answBtn">
+            Show Answer
+          </button>
+
+          <a class="tag1" href="#"> #Tag </a>
+          <a class="tag2" href="#"> #Tag </a>
+          <a class="tag3" href="#"> #Tag </a>
+          <a class="tag4" href="#"> #Tag </a>
+        </article>
+
+        <article class="questcard">
+          <h2 class="__h2">Question:</h2>
+          <div>
+            <img
+              class="--icon bookpos"
+              src="res/bookmark.svg"
+              alt="Drop to Bookmark"
+              data-js="trybackground"
+            />
+          </div>
+          <p class="question">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            odit cumque impedit laudantium explicabo perspiciatis fugiat quaerat
+            animi voluptatum laborum!
+          </p>
+
+          <div class="unvisible" data-js="answerfield">
+            <p>This is the Answer for the question nobody understood !!!</p>
+          </div>
+
+          <button class="bigansw background_green" data-js="answBtn">
+            Show Answer
+          </button>
+
+          <a class="tag1" href="#"> #Tag </a>
+          <a class="tag2" href="#"> #Tag </a>
+          <a class="tag3" href="#"> #Tag </a>
+          <a class="tag4" href="#"> #Tag </a>
+        </article>
+
+        <article class="questcard">
+          <h2 class="__h2">Question:</h2>
+          <div>
+            <img
+              class="--icon bookpos"
+              src="res/bookmark.svg"
+              alt="Drop to Bookmark"
+              data-js="trybackground"
+            />
+          </div>
+          <p class="question">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            odit cumque impedit laudantium explicabo perspiciatis fugiat quaerat
+            animi voluptatum laborum!
+          </p>
+
+          <div class="unvisible" data-js="answerfield">
+            <p>This is the Answer for the question nobody understood !!!</p>
+          </div>
+
+          <button class="bigansw background_green" data-js="answBtn">
+            Show Answer
+          </button>
+
+          <a class="tag1" href="#"> #Tag </a>
+          <a class="tag2" href="#"> #Tag </a>
+          <a class="tag3" href="#"> #Tag </a>
+          <a class="tag4" href="#"> #Tag </a>
+        </article>
+
+        <article class="questcard">
+          <h2 class="__h2">Question:</h2>
+          <div>
+            <img
+              class="--icon bookpos"
+              src="res/bookmark.svg"
+              alt="Drop to Bookmark"
+              data-js="trybackground"
+            />
+          </div>
+          <p class="question">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            odit cumque impedit laudantium explicabo perspiciatis fugiat quaerat
+            animi voluptatum laborum!
+          </p>
+
+          <div class="unvisible" data-js="answerfield">
+            <p>This is the Answer for the question nobody understood !!!</p>
+          </div>
+
+          <button class="bigansw background_green" data-js="answBtn">
+            Show Answer
+          </button>
+
+          <a class="tag1" href="#"> #Tag </a>
+          <a class="tag2" href="#"> #Tag </a>
+          <a class="tag3" href="#"> #Tag </a>
+          <a class="tag4" href="#"> #Tag </a>
+        </article>
+      </section>
+      <!-- -------------------------CreateScreen------------------------- -->
+      <section class="view displayOff" id="create">
+        <article class="mainsec">
+          <article>
+        <p class="call2act">Enter your question:</p>
+        <input
+          class="input"
+          type="text"
+          name="newQuestion"
+          id="addquestion"
+          maxlength="200"
+          placeholder="What ist the color of Ronald McDonald's hair ?"
+        />
+      </article>
+      <span data-js="counterTxt">0</span>
+
+        <article class="addanswer">
+          <p class="call2act">Enter your answer:</p>
+          <input
+            class="input"
+            type="text"
+            name="newAnswer"
+            id="addans"
+            placeholder="red"
+          />
+        </article>
+
+        <article class="addtag">
+          <p class="call2act">Enter your tags:</p>
+          <input
+            class="input"
+            type="text"
+            name="anewtag"
+            id="entertag"
+            placeholder="#-tag1 , #-tag2 , #-tag3 , #-tag4"
+          />
+        </article>
+        <article class="subm">
+          <input class="bigansw" type="submit" value="Submit" />
+        </article>
+      </section>
+      <!-- -------------------------ProfileScreen------------------------- -->
+      <section class="view displayOff" id="profile" class="roller">
+        <div class="letstest">
+
+        <img class="profpic" src="res/avatar.svg" alt="Your profile picture" />
+        <h2 class="profname">Max Mustermann</h2>
+
+        <article class="aboutyou">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            amet voluptates expedita placeat sequi sed mollitia consectetur
+            explicabo nam culpa delectus, ab nemo magni quas officia est
+            consequatur deleniti minima aliquid. Tenetur voluptatibus dolorum
+            nostrum neque. Laboriosam minima tenetur molestias soluta, id
+            expedita quidem sapiente. Eum vel laboriosam officia accusantium.
+          </p>
+        </article>
+
+        <h2 class="skillhead">Your Skills:</h2>
+          <p class="tag1">Skill 1</p>
+          <p class="tag2">Skill 2</p>
+          <p class="tag3">Skill 3</p>
+          <p class="tag4">Skill 4</p>
+
+        <article class="logout bigansw">
+          <a id="logoutbtn" href="#">LOGOUT</a>
+        </article>
+        </div>
+      </section>
     </main>
+
     <footer class="footer">
       <nav class="nav">
-        <a class="--btn" href="index.html" aria-label="Link to Home"
+        <a
+          class="--btn homeBtn"
+          href="#home"
+          aria-label="Link to Home"
+          data-js="toHome"
           ><img class="--icon" src="res/home.svg" alt="Home-Button"
         /></a>
 
-        <a class="--btn" href="bookmarks.html" aria-label="Link to Bookmarks"
+        <a
+          class="--btn"
+          href="#bookmark_collection"
+          aria-label="Link to Bookmarks"
+          data-js="toBookmark"
           ><img class="--icon" src="res/bookmark.svg" alt="Bookmark-Button"
         /></a>
 
-        <a class="--btn" href="create.html" aria-label="Link to Create a Page"
+        <a
+          class="--btn"
+          href="#create"
+          aria-label="Link to Create a Page"
+          data-js="toCreate"
           ><img class="--icon" src="res/create.svg" alt="Create Page-Button"
         /></a>
 
-        <a class="--btn" href="profile.html" aria-label="Link to profile">
+        <a
+          class="--btn"
+          href="#profile"
+          aria-label="Link to profile"
+          data-js="toProfile"
+        >
           <img class="--icon" src="res/profile.svg" alt="Profile Home-Button" />
         </a>
       </nav>

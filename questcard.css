@@ -5,8 +5,7 @@
   margin: 1em auto;
   padding: 1em;
   position: relative;
-  max-width: 40em;
-
+  max-width: 30em;
   display: grid;
 
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -15,15 +14,13 @@
   align-items: center;
   justify-content: center;
 
-  gap: 2em;
-  height: 100%;
+  gap: 2.5em;
+  height: 50%;
 }
 
 .__h2 {
   grid-row-start: 1;
   grid-column-start: 1;
-  align-items: center;
-
   grid-row-end: 2;
   grid-column-end: 3;
 }
@@ -41,6 +38,8 @@
   top: -1.8em;
 }
 .question {
+  max-width: 20em;
+  margin-left: 5em;
   grid-row-start: 2;
   grid-column-start: 1;
 
@@ -53,7 +52,7 @@
 
   grid-row-end: 4;
   grid-column-end: 4;
-  margin-top: 1em;
+  margin: 1em auto;
 }
 .tag1 {
   grid-row-start: 4;
@@ -61,6 +60,7 @@
 
   grid-row-end: 5;
   grid-column-end: 2;
+  margin-left: 2em;
 }
 .tag2 {
   grid-row-start: 4;
@@ -68,6 +68,7 @@
 
   grid-row-end: 5;
   grid-column-end: 3;
+  margin-left: 2em;
 }
 .tag3 {
   grid-row-start: 4;
@@ -75,6 +76,7 @@
 
   grid-row-end: 5;
   grid-column-end: 4;
+  margin-left: 2em;
 }
 .tag4 {
   grid-row-start: 4;
@@ -82,20 +84,26 @@
 
   grid-row-end: 5;
   grid-column-end: 5;
+  margin-left: 2em;
 }
 
 /* alles eingefügt für javascript */
 
 .--bookmarked {
-  background-color: orange;
+  background-color: rgba(200, 0, 0, 0.4);
+  border-radius: 4px;
 }
 
 .unvisible {
-  width: 20em;
+  width: 15em;
+
   border: 1px solid black;
+  background-color: rgba(0, 200, 0, 0.4);
+
+  border-radius: 1em;
   padding: 0.5em;
   position: absolute;
-  right: 30%;
+  right: 7.5em;
   opacity: 0;
 }
 
