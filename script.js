@@ -4,7 +4,7 @@ import {
   card_activity,
 } from "./js_files/card_action.js";
 
-import { navigation, headLine } from "./navigation.js";
+import { navigation, headLine } from "./js_files/navigation.js";
 // -----------------------------Varialbles---------------------------------
 let cards = document.querySelectorAll(".questcard");
 const homeBtn = document.querySelector("[data-js=toHome]");
