@@ -21,3 +21,13 @@ function card_activity(btn) {
 }
 
 export { toggleclass, show_hide_click, card_activity };
+
+// {
+// category: "Entertainment: Music"
+// correct_answer: "True"
+// difficulty: "easy"
+// incorrect_answers: ['False']
+// question: "The music group Daft Punk got their name from a negative review they recieved."
+// type: "boolean"
+// [[Prototype]]: Object
+// }
